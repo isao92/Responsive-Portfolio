@@ -1,0 +1,356 @@
+
+*{
+    box-sizing: border-box;
+}
+
+
+.box{
+    font-family: 'Georgia', Times, "Times New Roman", serif;
+}
+
+
+/*
+Banner
+*/
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    text-align: center;
+    height: 100px;
+    margin-bottom: 0px;
+    border-bottom: 2px solid gray;
+    z-index: 4;
+}
+
+/*
+Background Image
+*/
+#backg > img {
+    position: fixed;
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/*
+Page Title
+*/
+.blue{
+    background-color: #4aaaa5;
+    height: 100px;
+    margin-left: 10%;
+    margin-bottom: 0px;
+    /*
+    centered h1 with padding
+    */
+    padding: 20px;
+    width: 40%;
+    color: white;
+    float: left;
+}
+
+
+
+/*
+About, Portfolio and Contact move to right
+*/ #Navigation
+{
+    float: right;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    width: 30%;
+    font-style: normal;
+    padding-right: 10%;
+    z-index: 5;
+}
+
+#Navigation > a{
+    color: black;
+    text-decoration: none;
+}
+
+
+/*
+Clean
+*/
+.services:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*
+div 1 for Hang man and RPG Game
+*/
+.portfolio-img {
+    text-align: center;
+    float: left;
+    width: 33%;
+    margin-left: 0px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+/*
+div 2 for trivia and rps game
+*/
+.portfolio-img2 {
+    width: 40%;
+    text-align: center;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.portfolio-img img{
+    margin-top: 10px;
+    width: 200px;
+}
+
+.portfolio-img2 img{
+    margin-top: 10px;
+    width: 200px;
+}
+
+.portfolio-img p{
+    position: relative;
+}
+.portfolio-img2 p{
+    position: relative;
+    margin-left: 20px;
+}
+
+/*
+About Me Title
+*/
+#backg h2 {
+    
+    color: #4aaaa5;
+    padding-bottom: 10px;
+    width: 80%;
+    position: absolute;
+    top: 15px;
+    text-align: left;
+    border-bottom: 2px solid lightgray;
+}
+
+
+/*
+Profile Picture
+*/
+#backg p > img {
+    float: left;
+    margin-right: 15px;
+    width: 10px;
+    height: 95px;
+
+}
+
+
+/*
+Body
+*/
+#backg p{
+    border: 2px solid gray;
+    width: 200px;
+    font-size: 2em;
+    color: gray;
+    bottom: 125px;
+    background-color: white;
+}
+
+/*
+Background body Box
+*/
+#backg2
+{
+    position: absolute;
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    top: 108px;
+    right: 10%;
+    left: 10%;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 7px;
+    margin-bottom: 0px;
+    padding: 100px;
+    z-index: 1;
+
+}
+
+
+
+.littleRectangle {
+    position:fixed;
+    width: 100%;
+    border-bottom: 8px solid #4aaaa5;
+    z-index: 2;
+}
+
+
+
+
+#footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: .8em;
+    height: 40px;
+    color: white;
+    background-color: gray;
+    text-align: center;
+    float: left;
+    width: 100%;
+    z-index: 3;
+}
+
+#footer > p{
+
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+/*
+@media screen max-width: 980px
+*/
+@media screen and (max-width: 980px){
+    #Navigation{
+        width: 40%;
+    }
+    
+}
+
+/*
+@media screen max-width: 768px
+*/
+@media screen and (max-width: 768px){
+    
+    #Navigation{
+        width: 40%;
+    }
+
+
+}
+
+
+/*
+@media screen max-width: 640px
+*/
+@media screen and (max-width: 640px) {
+    .blue{
+        height: 110px;
+    } 
+
+    .backg2{
+        padding-top: 30%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #backg > img{
+        position: static;
+    }
+   
+    header{
+        position: static;
+        top: 0;
+        height: 110px;
+        z-index: 6;
+    }
+
+    #footer{
+        height: 60px;
+    }
+
+    
+/*
+@media screen max-width: 980px
+*/
+@media screen {
+    max-width: 980px;
+    
+}
+
+/*
+@media screen max-width: 768px
+*/
+@media screen and (max-width: 768px) {
+    #Navigation{
+    width: 40%;
+    font-size: .8em;
+    }
+
+    
+}
+
+
+/*
+@media screen max-width: 640px
+*/
+@media screen and (max-width: 640px) {
+
+    .blue{
+        height: 80px;
+        width: 100%;
+        margin-left: 0px;
+    } 
+
+    .backg2{
+        padding-top: 30%;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 100%;
+    }
+
+    #backg > img{
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+   
+    header{
+        position: static;
+        top: 0;
+        height: 110px;
+        z-index: 6;
+    }
+
+    #footer{
+        height: 60px;
+    }
+
+    #Navigation{
+        width: 100%;
+        padding-top: 10px;
+        padding-left: 10%;
+
+        position: static;
+    }
+
+    .portfolio-img{
+        width: 100%;
+    }
+
+    .portfolio-img2{
+        width:100%;
+        background-color: white;
+    }
+    
+
+    #backg h2{
+        left: 50px;
+        position: absolute;
+        padding-top: 5%;
+    }
+
+
+}
+
+}
