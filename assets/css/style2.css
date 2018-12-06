@@ -91,7 +91,7 @@ div 1 for Hang man and RPG Game
     float: left;
     width: 33%;
     margin-left: 0px;
-    margin-right: 20px;
+    margin-right: 15%;
     margin-bottom: 10px;
 }
 
@@ -170,8 +170,6 @@ Background body Box
 {
     position: absolute;
     background-color: white;
-    width: 80%;
-    height: 100%;
     top: 108px;
     right: 10%;
     left: 10%;
@@ -179,7 +177,7 @@ Background body Box
     margin-right: 10px;
     margin-left: 7px;
     margin-bottom: 0px;
-    padding: 100px;
+    padding: 10%;
     z-index: 1;
 
 }
@@ -216,6 +214,26 @@ Background body Box
     text-align: center;
 }
 
+#project-one {
+    background-color: rgb(75, 74, 74);
+    width: 80%;
+    margin-top: 5%;
+}
+
+#project-one > a > img{
+    width: 100%;
+}
+
+#project-title{
+    background-color: white;
+    color: gray;
+    border-color: darkgray;
+    width: 60%;
+    font-size:120%;
+    border-style: double;
+    margin-bottom: 5%;
+}
+
 
 /*
 @media screen max-width: 980px
@@ -235,6 +253,14 @@ Background body Box
     #Navigation{
         width: 40%;
     }
+    .portfolio-img{
+        margin-right: 15%;
+        width: 50%;
+        margin-right: 20%;
+        margin-bottom: initial;
+    }
+
+
 
 
 }
@@ -254,9 +280,6 @@ Background body Box
         margin-right: 5%;
     }
 
-    #backg > img{
-        position: static;
-    }
    
     header{
         position: static;
@@ -267,6 +290,9 @@ Background body Box
 
     #footer{
         height: 60px;
+    }
+    #project-one{
+        margin-top: 15%;
     }
 
     
@@ -296,7 +322,10 @@ Background body Box
 */
 @media screen and (max-width: 640px) {
 
+    
+
     .blue{
+        position: fixed;
         height: 80px;
         width: 100%;
         margin-left: 0px;
@@ -310,16 +339,24 @@ Background body Box
     }
 
     #backg > img{
-        display: block;
-        height: 100%;
         width: 100%;
     }
    
     header{
-        position: static;
+        position: fixed;
         top: 0;
         height: 110px;
         z-index: 6;
+    }
+
+
+    #project-title{
+        width: 65%;
+        font-size: 90%;
+    }
+
+    #backg p {
+        font-size: 1.5em;
     }
 
     #footer{
@@ -328,13 +365,14 @@ Background body Box
 
     #Navigation{
         width: 100%;
-        padding-top: 10px;
+        padding-top: 85px;
         padding-left: 10%;
 
-        position: static;
+        position: fixed;
     }
 
     .portfolio-img{
+        margin-top: 60px;
         width: 100%;
     }
 
@@ -345,9 +383,8 @@ Background body Box
     
 
     #backg h2{
-        left: 50px;
+        
         position: absolute;
-        padding-top: 5%;
     }
 
 

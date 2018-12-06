@@ -149,11 +149,19 @@ Background body Box
     margin-right: 10px;
     margin-left: 7px;
     margin-bottom: 0px;
-    padding: 100px;
     top: 108px;
     z-index: 1;
 }
 
+#backg2 > h2{
+    padding-left: 10%;
+}
+
+
+#input-form{
+    padding-left: 10%;
+    padding-top: 15%;
+}
 
 
 
@@ -213,6 +221,12 @@ Background body Box
 */
 @media screen and (max-width: 640px) {
 
+
+    #input-form{
+        padding-left: 10%;
+        padding-top: 25%;
+    }
+
     .blue{
         height: 80px;
         width: 100%;
@@ -226,11 +240,10 @@ Background body Box
     }
 
     #backg > img{
-        position: static;
     }
    
     header{
-        position: static;
+        position: fixed;
         top: 0;
         height: 110px;
         z-index: 6;
